@@ -47,15 +47,13 @@ export const App: React.FC = () => {
 
   useEffect(() => {
 
-    let check = checkLetter(firstName);
-    setNameArr(check);
+    setNameArr(checkLetter(firstName));
 
   }, [firstName])
 
   useEffect(() => {
-
-    let check = checkLetter(lastName);
-    setLastArr(check);
+    
+    setLastArr(checkLetter(lastName));
 
   },[lastName])
 
