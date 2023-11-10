@@ -31,6 +31,7 @@ export const App: React.FC = () => {
       let find: number = elements.findIndex((el) => el === letter);
       if (find !== -1) { placeholder[0].green = true }
     }
+    
     if (placeholder.length > 1) {
       let letters = placeholder[0].letter + placeholder[1].letter;
       let find: number = elements.findIndex((el) => el === letters);
@@ -39,6 +40,7 @@ export const App: React.FC = () => {
         placeholder[1].green = true;
       }
     }
+
     return placeholder;
 
   }
@@ -51,14 +53,15 @@ export const App: React.FC = () => {
   }, [firstName])
 
   useEffect(() => {
+
     let check = checkLetter(lastName);
     setLastArr(check);
+
   },[lastName])
 
   return (
 
     <div className="container">
-
       <div className="strings">
         {
           nameArr.length !== 0 &&

@@ -10,7 +10,7 @@ This challenge was really challenging and a lot of fun too!
 ## Installation
 
 1. Clone the repository<br>
-git clone https://github.com/AndresAltv/Dots-challenge.git<br><br>
+git clone https://github.com/AndresAltv/BreakingBad-Challenge.git<br><br>
 
 2. Install dependencies<br>
 npm install<br><br>
